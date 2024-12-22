@@ -1,0 +1,100 @@
+.student-form {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* White background */
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* Neutral dark gray for labels */
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark gray text for readability */
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  border-color: #6200ea; /* Purple border on focus */
+  outline: none;
+  box-shadow: 0 0 3px rgba(98, 0, 234, 0.5); /* Subtle purple glow */
+}
+
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 3px #6200ea;
+}
+
+.btn.next {
+  background-color: #6200ea;
+  color: #fff;
+}
+
+.btn.next:hover {
+  background-color: #4500b8; /* Darker purple on hover */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .student-form {
+    padding: 15px;
+    width: 90%;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}

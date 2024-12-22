@@ -1,0 +1,68 @@
+.progress-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+}
+.form-input {
+  width: 100%; /* Input fields should take full width */
+  margin-bottom: 15px;
+}
+
+.step {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: #e0e0e0;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.step.active {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.step:not(:last-child) {
+  margin-right: 15px;
+}
+
+.progress-bar:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.progress-bar.active-step-1:before {
+  width: 33.33%;
+}
+.progress-bar.active-step-2:before {
+  width: 66.66%;
+}
+.progress-bar.active-step-3:before {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .progress-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    margin-bottom: 10px;
+  }
+
+  .step:not(:last-child) {
+    margin-right: 0;
+  }
+}

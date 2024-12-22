@@ -1,0 +1,97 @@
+/* Step 2 Form Styling - Matching Step 1 */
+.student-form.step-2 {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* Step-specific label and input adjustments */
+.student-form.step-2 label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* Neutral dark gray for labels */
+  font-size: 14px; /* Matching Step 1 font size */
+}
+
+.student-form.step-2 input,
+.student-form.step-2 select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #333333;
+  box-sizing: border-box;
+}
+
+/* Input and select focus state */
+.student-form.step-2 input:focus,
+.student-form.step-2 select:focus {
+  border-color: #6200ea; /* Purple border on focus */
+  outline: none;
+  box-shadow: 0 0 3px rgba(98, 0, 234, 0.5); /* Purple glow */
+}
+
+/* Button layout for Step 2 */
+.form-buttons {
+  display: flex;
+  justify-content: flex-end; /* Keep buttons aligned to the right */
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect on buttons */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 3px #6200ea;
+}
+
+/* Step 2-specific Next button */
+.btn.next {
+  background-color: #6200ea;
+  color: #fff;
+}
+
+.btn.next:hover {
+  background-color: #4500b8; /* Darker purple on hover */
+}
+
+/* Step 2-specific Back button */
+.btn.back {
+  background-color: #bbb;
+  color: #333;
+}
+
+.btn.back:hover {
+  background-color: #888; /* Darker gray on hover */
+}
+
+/* Layout adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+  .student-form.step-2 {
+    padding: 15px;
+    width: 90%;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
